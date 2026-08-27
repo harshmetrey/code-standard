@@ -1,0 +1,69 @@
+{
+  "name": "@harsh_metrey/code-standard",
+  "version": "1.0.1",
+  "description": "Zero-config enterprise ESLint and Prettier standard for React, React Native, and TypeScript codebases.",
+  "author": "Staff Platform Engineer (DevEx)",
+  "license": "MIT",
+  "main": "index.js",
+  "bin": {
+    "code-standard": "./bin/setup.js"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./react": "./react.js",
+    "./react-native": "./react-native.js",
+    "./prettier": "./prettier.config.js"
+  },
+  "files": [
+    "bin",
+    "rules",
+    "index.js",
+    "react.js",
+    "react-native.js",
+    "prettier.config.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node tests/config.test.js && node tests/rule-ast.test.js && node tests/rule.test.js",
+    "lint": "eslint . --ext .js,.ts"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0",
+    "prettier": ">=3.0.0",
+    "typescript": ">=4.5.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "@typescript-eslint/parser": "^6.18.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-native": "^4.1.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "prettier",
+    "typescript",
+    "react",
+    "react-native",
+    "devex",
+    "code-quality",
+    "ast-rules",
+    "design-system"
+  ]
+}
