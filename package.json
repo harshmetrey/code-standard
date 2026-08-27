@@ -1,9 +1,17 @@
 {
   "name": "@harsh_metrey/code-standard",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Zero-config enterprise ESLint and Prettier standard for React, React Native, and TypeScript codebases.",
   "author": "Staff Platform Engineer (DevEx)",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshmetrey/code-standard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/harshmetrey/code-standard/issues"
+  },
+  "homepage": "https://github.com/harshmetrey/code-standard#readme",
   "main": "index.js",
   "bin": {
     "code-standard": "./bin/setup.js"
